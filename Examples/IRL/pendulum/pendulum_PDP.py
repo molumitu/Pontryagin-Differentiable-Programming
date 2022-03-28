@@ -11,7 +11,7 @@ pendulum.initDyn()
 pendulum.initCost()
 
 # --------------------------- load demos data ----------------------------------------
-data = sio.loadmat('data/pendulum_demos.mat')
+data = sio.loadmat('Examples/IRL/pendulum/data/pendulum_demos.mat')
 trajectories = data['trajectories']
 true_parameter = data['true_parameter']
 dt = data['dt']
@@ -94,5 +94,5 @@ for j in range(10):  # trial loop
                  'parameter_trace': parameter_trace,
                  'learning_rate': lr,
                  'time_passed': time.time() - start_time}
-    sio.savemat('./data/PDP_results_trial_' + str(j) + '.mat', {'results': save_data})
+    sio.savemat('Examples/IRL/pendulum/data/PDP_results_trial_' + str(j) + '.mat', {'results': save_data})
 #
