@@ -21,6 +21,7 @@
 """
 
 from casadi import *
+import casadi
 import numpy
 from scipy import interpolate
 

@@ -1,0 +1,8 @@
+conda create -n pmp python=3.8
+conda activate pmp
+conda install numpy
+pip install casadi
+conda install scipy
+conda install matplotlib
+
+history | tail -n 50

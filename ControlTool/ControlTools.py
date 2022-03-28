@@ -11,6 +11,7 @@
 # Last update: Apr. 19, 2020
 """
 from casadi import *
+import casadi
 import numpy
 import time
 
